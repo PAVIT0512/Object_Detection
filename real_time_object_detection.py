@@ -36,7 +36,7 @@ while True:
 		confidence = detections[0, 0, i, 2]
 
 		
-		if confidence > 0.2:
+		if confidence > 0.4:
 			
 			idx = int(detections[0, 0, i, 1])
 			box = detections[0, 0, i, 3:7] * np.array([w, h, w, h])
